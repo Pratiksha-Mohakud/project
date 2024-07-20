@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<h2>Adding new employee</h2>
+
+<!--Taking input from the user-->
+
+<form action="/create" method="post">  <!--the calling the create route having post method-->
+    <div>
+        ID-<input type="number" name="id" placeholder="Enter id">
+    </div>
+    <div>
+        Name-<input type="text" name="name" placeholder="Enter name">
+    </div>
+    <div>
+        Age-<input type="number" name="age" placeholder="Enter age">
+    </div>
+    <div>
+        Department-<input type="text" name="department" placeholder="Enter department">
+    </div>
+    <div>
+        <input type="submit" value="Add">
+    </div>
+    
+
+</form>
+
+{% endblock %}

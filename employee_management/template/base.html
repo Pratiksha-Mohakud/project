@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>   <!--Creating 4 buttons to be displayed in home page-->
+<html>
+
+<head> 
+
+</head>
+
+<body>
+
+    {% block head %}
+
+    <h1>Employee management</h1>
+
+     <div style="overflow: auto;width: 100%;">
+        <div style="width:200px;float: right;">
+             <!--to add new employees the user has to verify first that the entry is unique then    it is interconnected to create button-->
+            <a href="Verify">  <h3>To create verify first</h3>
+                <button  class="GFG">
+                    Verify
+                </button>
+            </a>
+        </div>
+        </div>
+        <div style="width:200px;float: right;">
+        <div style="width:200px;float: right;">
+            <a href="Display">
+                <button class="GFG">
+                    Display
+                </button>
+            </a>
+        </div>
+    </div>
+    <div style="overflow: auto;width: 100%;">
+        <div style="width:200px;float: right;">
+            <a href="Update">
+                <button  class="GFG">
+                    Update
+                </button>
+            </a>
+        </div>
+        </div>
+        <div style="width:200px;float: right;">
+        <div style="width:200px;float: right;">
+            <a href="Delete">
+                <button class="GFG">
+                    Delete
+                </button>
+            </a>
+        </div>
+    </div>
+    <p> This is an employee management web application that uses basic CRUD functionalities.
+        Login or signup to continue
+    </p>
+    {% endblock %}
+	
+</body>
+
+</html>
